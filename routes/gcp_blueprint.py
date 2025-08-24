@@ -13,7 +13,7 @@ def run_GCP_prowler_scan():
   # Retrieve the reuqest data
   data = request.get_json() or {}
 
-  # Check if the porject_id is part of the request body
+  # Check if the project_id is part of the request body
   project_id = data.get('project_id')
   if not project_id:
       return jsonify({ "error": "Missing or empty 'project_id' in request body" }) 
