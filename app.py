@@ -7,6 +7,7 @@ import json
 
 # blueprints
 from routes.gcp_blueprint import gcp_blueprint
+from routes.aws_blueprint import aws_blueprint
 # =========================== CONFIG =========================== #
 # Create the app
 app = Flask(__name__)
@@ -15,7 +16,7 @@ load_dotenv()
 
 # Register blueprints
 app.register_blueprint(gcp_blueprint)
-
+app.register_blueprint(aws_blueprint)
 
 # Start the server
 port = 8080

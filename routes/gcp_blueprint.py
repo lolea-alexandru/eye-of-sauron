@@ -8,7 +8,6 @@ import json
 gcp_blueprint = Blueprint("gcp_blueprint", __name__)
 
 # Define routes
-# Define home route
 @gcp_blueprint.post("/gcp/prowler-scan")
 def run_GCP_prowler_scan():
   # Retrieve the reuqest data
